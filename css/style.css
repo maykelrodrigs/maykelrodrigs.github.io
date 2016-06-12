@@ -114,13 +114,21 @@ body {
     box-shadow: none;
     color: #fcb92d; }
 
-.about .text {
-  padding-bottom: 100px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  letter-spacing: 1px; }
+.about {
+  padding-top: 80px; }
+  .about .text {
+    padding-bottom: 100px;
+    padding-right: 30px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify; }
+  .about .signature {
+    padding-top: 50px;
+    width: 100%;
+    text-align: right; }
+    .about .signature img {
+      width: 40%; }
 
 .tpl-progress {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -205,11 +213,13 @@ body {
       padding-top: 50px;
       padding-bottom: 30px; }
     .banner .banner-bg .txt-banner .titles p {
-      font-size: 20px;
+      font-size: 22px;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       color: white;
-      font-weight: 200;
-      letter-spacing: 2px; }
+      font-weight: 200; }
+      .banner .banner-bg .txt-banner .titles p span {
+        color: #fcb92d;
+        font-weight: bold; }
     .banner .banner-bg .img-banner {
       margin-top: -30px; }
       .banner .banner-bg .img-banner img {
