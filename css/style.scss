@@ -133,7 +133,7 @@ body {
     text-align: justify;
   }
   .signature {
-    padding-top: 50px;
+    padding-top: 30px;
     width: 100%;
     text-align: right;
     img {
@@ -477,7 +477,7 @@ body {
           }
         }
         .title {
-          padding-top: 10px;
+          padding-top: 0px;
           padding-left: 40px;
           margin-bottom: 1px;
           font-size: 12px;
@@ -486,13 +486,14 @@ body {
           letter-spacing: 0.3em;
         }
         .text {
+          padding-top: 10px;
           padding-left: 40px;
           font-size: 15px;
           font-weight: 500;
           letter-spacing: 0.1em;
         }
       }
-      &:hover .contact-item .text {
+      &:hover .contact-item .title {
         display: block; margin: 0 auto; position: relative;
         -webkit-animation: iconFloat 0.8s infinite linear;
         -moz-animation: iconFloat 0.8s infinite linear;
