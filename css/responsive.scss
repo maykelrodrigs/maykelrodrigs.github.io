@@ -1,0 +1,77 @@
+@media all and (max-width: 768px) {
+  .home {
+    #text {
+      #title {
+        font-size: 40px;
+      }
+    }
+  }
+  .titles {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .about {
+    padding-top: 20px;
+    .text{
+      padding-bottom: 10px;
+    }
+  }
+  .banner {
+    padding-top: 15vh;
+    .banner-bg {
+      .img-banner {
+        margin-top: 0px;
+      }
+      .txt-banner {
+        .titles {
+          h2 {
+            padding-top: 0px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .works {
+    .text {
+      .titles {
+        text-align: center;
+      }
+    }
+  }
+  .contact {
+    .info {
+      padding-top: 40px;
+      padding-bottom: 80px;
+      .col-md-4 {
+        padding-bottom: 20px;
+        .contact-item {
+          text-align: center;
+          .icons {
+            left: 50px;
+          }
+        }
+      }
+    }
+  }
+  .timeline {
+    .education {
+      .line, .marker {
+          display: none;
+      }
+      .item {
+        width: 100%;
+        margin-bottom: 15px;
+        .year {
+          display: none;
+        }
+        .content {
+          position: relative;
+        }
+      }
+      .item:nth-child(even) .content {
+        display: none;
+      }
+    }
+  }
+}
