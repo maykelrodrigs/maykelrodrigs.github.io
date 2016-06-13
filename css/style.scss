@@ -38,11 +38,11 @@ body {
 .title_line {
   background:url("../img/title_line.png") no-repeat; width:1168px; height:2px; text-align: center; margin-top: -8px;position: absolute;
 }
-.title_line_services {
-  background:url("../img/s_read_more.png") no-repeat; width:50px; height:22px; margin:0 auto; text-align: center;
-}
-.black-line-top { margin-top: 28px; margin-bottom: 2px; background: #000; width: 52px; height: 1px; }
-.black-line-bottom { margin-bottom: 20px; margin-top: 2px; background: #000; width: 52px; height: 1px; }
+//.title_line_services {
+//  background:url("../img/s_read_more.png") no-repeat; width:50px; height:22px; margin:0 auto; text-align: center;
+//}
+//.black-line-top { margin-top: 28px; margin-bottom: 2px; background: #000; width: 52px; height: 1px; }
+//.black-line-bottom { margin-bottom: 20px; margin-top: 2px; background: #000; width: 52px; height: 1px; }
 
 //-----------------------------------------------------------------------
 //---------------------|| HOME
@@ -180,8 +180,7 @@ body {
 .banner {
   padding-top: 15vh;
   .banner-bg {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%),
-      url("../img/footer-bg.jpg") no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%) no-repeat;
     background-repeat: repeat;
     height: 70vh;
     .txt-banner {
@@ -226,34 +225,6 @@ body {
       margin-bottom: 70px;
       h2 {
         color: white;
-      }
-    }
-    .text {
-      text-align: center;
-      .icon-text {
-        margin: 0 auto;
-        width: 41px;
-        height: 41px;
-        background: url('../img/coma.png');
-        background-repeat: no-repeat;
-      }
-      p {
-        padding: 0 100px;
-        font-size: 18px;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        color: white;
-      }
-    }
-    .logo {
-      padding-top: 60px;
-      .column-logo {
-        text-align: center;
-        img {
-          width: 90%;
-          &:hover {
-            opacity: .6;
-          }
-        }
       }
     }
   }

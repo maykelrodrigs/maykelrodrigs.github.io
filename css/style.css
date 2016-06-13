@@ -34,27 +34,6 @@ body {
   margin-top: -8px;
   position: absolute; }
 
-.title_line_services {
-  background: url("../img/s_read_more.png") no-repeat;
-  width: 50px;
-  height: 22px;
-  margin: 0 auto;
-  text-align: center; }
-
-.black-line-top {
-  margin-top: 28px;
-  margin-bottom: 2px;
-  background: #000;
-  width: 52px;
-  height: 1px; }
-
-.black-line-bottom {
-  margin-bottom: 20px;
-  margin-top: 2px;
-  background: #000;
-  width: 52px;
-  height: 1px; }
-
 .home {
   position: relative; }
   .home #logo {
@@ -162,7 +141,7 @@ body {
 .banner {
   padding-top: 15vh; }
   .banner .banner-bg {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("../img/footer-bg.jpg") no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%) no-repeat;
     background-repeat: repeat;
     height: 70vh; }
     .banner .banner-bg .txt-banner .titles h2 {
@@ -192,27 +171,6 @@ body {
       margin-bottom: 70px; }
       .timeline .timeline-bg .titles h2 {
         color: white; }
-    .timeline .timeline-bg .text {
-      text-align: center; }
-      .timeline .timeline-bg .text .icon-text {
-        margin: 0 auto;
-        width: 41px;
-        height: 41px;
-        background: url("../img/coma.png");
-        background-repeat: no-repeat; }
-      .timeline .timeline-bg .text p {
-        padding: 0 100px;
-        font-size: 18px;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        color: white; }
-    .timeline .timeline-bg .logo {
-      padding-top: 60px; }
-      .timeline .timeline-bg .logo .column-logo {
-        text-align: center; }
-        .timeline .timeline-bg .logo .column-logo img {
-          width: 90%; }
-          .timeline .timeline-bg .logo .column-logo img:hover {
-            opacity: .6; }
   .timeline .education {
     padding: 50px 0;
     margin: 50px 0; }
