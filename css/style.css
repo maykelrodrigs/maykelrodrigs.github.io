@@ -66,32 +66,51 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, black 100%), url("../img/pattern-01.png") repeat;
   opacity: .9; }
 
-.navbar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
+.navbar-brand {
+  font-size: 26px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+  .navbar-brand span {
+    color: #fcb92d;
+    font-weight: 800; }
+
+.navbar-container {
+  padding: 20px 0 20px 0; }
+
+.navbar.navbar-fixed-top.fixed-theme {
+  background-color: #111;
+  border-color: #080808;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
+
+.navbar-container.fixed-theme {
+  padding: 0; }
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+  transition: 0.8s;
+  -webkit-transition: 0.8s; }
+
+.navbar .nav > li a {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-shadow: none;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase; }
+
+.navbar .nav > li a:hover, .navbar .nav > li a:focus {
   background: none;
-  border: none;
   box-shadow: none;
-  margin-top: 50px;
-  z-index: 10000; }
-  .navbar .nav > li a {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-shadow: none;
-    font-size: 17px;
-    color: white;
-    text-transform: uppercase; }
-    .navbar .nav > li a:hover, .navbar .nav > li a:focus {
-      background: none;
-      box-shadow: none;
-      color: #fcb92d; }
-  .navbar .nav > .active a,
-  .navbar .nav > .active a:hover,
-  .navbar .nav > .active a:focus {
-    background: none;
-    box-shadow: none;
-    color: #fcb92d; }
+  color: #fcb92d; }
+
+.navbar .nav > .active a,
+.navbar .nav > .active a:hover,
+.navbar .nav > .active a:focus {
+  background: none;
+  box-shadow: none;
+  color: #fcb92d; }
 
 .about {
   padding-top: 80px; }

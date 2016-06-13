@@ -84,41 +84,52 @@ body {
   opacity: .9;
 }
 
-.navbar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background: none;
-  border: none;
-  box-shadow: none;
-  margin-top: 50px;
-  z-index: 10000;
-
-  .nav > li {
-    a {
-      font-family: 'Yanone Kaffeesatz', sans-serif;
-      text-shadow: none;
-      font-size: 17px;
-      color: white;
-      text-transform: uppercase;
-
-      &:hover,
-      &:focus {
-        background: none;
-        box-shadow: none;
-        color: $primary;
-      }
+.navbar-brand {
+    font-size: 26px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    span{
+      color: $primary;
+      font-weight: 800;
     }
-  }
-  .nav > .active a,
-  .nav > .active a:hover,
-  .nav > .active a:focus {
+}
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #111;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+.navbar .nav > li a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: none;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase; }
+    .navbar .nav > li a:hover, .navbar .nav > li a:focus {
+      background: none;
+      box-shadow: none;
+      color: #fcb92d; }
+  .navbar .nav > .active a,
+  .navbar .nav > .active a:hover,
+  .navbar .nav > .active a:focus {
     background: none;
     box-shadow: none;
-    color: $primary;
-  }
-}
+    color: #fcb92d; }
 
 //-----------------------------------------------------------------------
 //---------------------|| ABOUT
