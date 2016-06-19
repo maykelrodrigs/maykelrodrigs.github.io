@@ -12,14 +12,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/uikit.css">
-
-  <script src="js/modernizr.custom.js"></script>
 
   <!-- fonts -->
   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:100,200,300,400,500,600,700,800'>
-  <link href='https://fonts.googleapis.com/css?family=Ubuntu:800' rel='stylesheet' type='text/css'>
 
   <!-- favicon -->
   <link rel="icon" href="img/favicon/favicon-16.png" sizes="16x16">
@@ -33,308 +28,278 @@
   <meta name="keywords" content="maykel, rodrigues, maykel rodrigues, programador, desenvolver web" />
   <meta name="revisit-after" content="15 Days" />
   <meta name="language" content="pt-BR" />
-  <meta name="robots" content ="noindex, follow">
+  <meta name="robots" content ="noindex, follow" />
 
-  <meta property="og:site_name" content="Maykel Rodrigues">
-  <meta property="og:description" content="Sou programador, desenvolvedor web e viciado em tecnologia - assim, nessa ordem.">
+  <meta property="og:site_name" content="Maykel Rodrigues" />
+  <meta property="og:description" content="Sou programador, desenvolvedor web e viciado em tecnologia - assim, nessa ordem." />
   <meta property="og:image" content="img/logo.png" />
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:url" content="http://maykelrodrigues.github.io" />
 
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <nav id="header" class="navbar navbar-fixed-top">
-    <div id="header-container" class="container navbar-container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand">
-          <span><&#47;></span>maykel<span>rodrigues</span>
-        </a>
+  <!-- Navigation -->
+  <nav class="navbar  navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header page-scroll">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">
+                <span><&#47;></span>maykel<span>rodrigues</span>
+              </a>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="#page-top">Home</a></li>
+                <li><a class="page-scroll" href="#about">About</a></li>
+                <li><a class="page-scroll" href="#education">Education</a></li>
+                <li><a class="page-scroll" href="#jobs">works</a></li>
+                <li><a class="page-scroll" href="#contact">Contact</a></li>
+              </ul>
+          </div>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#perfil">Perfil</a></li>
-          <li><a href="#jobs">Jobs</a></li>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
-  </nav><!-- /.navbar -->
+  </nav>
 
-  <section class="section home home-bg parallax">
-    <div class="header-pattern"></div>
-
-    <div id="text" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1000, repeat: true}">
-      <div id="title">- Olá, Seja bem vindo! -</div>
-      <p>
-        Desenvolvedor web & desktop, entusiasta de UX e viciado em tecnologia.
-      </p>
+  <section class="section home parallax">
+    <div class="pattern"></div>
+      <div id="text">
+        <h2>- Olá, Seja bem vindo! -</h2>
+        <p>Desenvolvedor web & desktop, entusiasta de UX e viciado em tecnologia.</p>
     </div>
-
   </section>
 
-  <section class="section about" id="about">
+  <section class="about" id="about">
     <div class="container">
-      <div class="row titles">
-        <div class="col-md-12">
-          <h2 data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:1000, repeat: true}">
-            about <strong>rodrigues</strong></h2>
-            <i class="title_line"></i>
+      <div class="col-md-12">
+        <h2 class="titles">
+          about <strong>rodrigues</strong></h2>
+          <i class="line"></i>
+        </h2>
+      </div>
+
+      <div class="col-md-4 texts">
+        <p>Oi, meu nome é Maykel Rodrigues, nasci em Colatina/ES e trabalho com desenvolvimento
+          de aplicações desktop, web e mobile. Sou formado em Redes de Computadores (2014) pelo
+          Instituto Federal do Espírito Santo/IFES e atualmente cursando Sistemas de Informação
+          (2018) na mesma instituição.
+        </p>
+      </div>
+
+      <div class="col-md-4 texts">
+        <p>
+          "Conhecimento que tenha qualquer valor não pode ser dado. Deve ser procurado e conquistado."
+        </p>
+        <strong>- Tot, deus da Sabedoria, em 'A Sombra da Serpente'.</strong>
+        <div id="signature">
+          <img src="img/signature.png" alt="assinatura" />
+        </div>
+      </div>
+
+      <div class="col-md-4 texts">
+        <div class="progress tpl-progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            HTML, % <span>95</span>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-4 text">
-            <p>
-              Oi, meu nome é Maykel Rodrigues, nasci em Colatina/ES e
-              trabalho com desenvolvimento de aplicações desktop, web e mobile.
-              Sou formado em Redes de Computadores (2014) pelo Instituto Federal
-              do Espírito Santo/IFES e
-              atualmente cursando Sistemas de Informação (2018)
-              na mesma instituição.
-            </p>
+        <div class="progress tpl-progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            CSS [Sass, Bootstrap, Foundation], % <span>90</span>
           </div>
-
-          <div class="col-md-4 text">
-            <p>
-              "Conhecimento que tenha qualquer valor não pode ser dado. Deve ser procurado e conquistado."
-            </p>
-            <strong>- Tot, deus da Sabedoria, em 'A Sombra da Serpente'.</strong>
-            <div class="signature">
-              <img src="img/signature.png" alt="" />
-            </div>
+        </div>
+        <div class="progress tpl-progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            JavaScript [jQuery, AngularJS], % <span>75</span>
           </div>
-
-          <div class="col-md-4">
-            <div class="progress tpl-progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                HTML, % <span>95</span>
-              </div>
-            </div>
-            <div class="progress tpl-progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                CSS [Sass, Bootstrap, Foundation], % <span>90</span>
-              </div>
-            </div>
-            <div class="progress tpl-progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                JavaScript [jQuery, AngularJS], % <span>75</span>
-              </div>
-            </div>
-            <div class="progress tpl-progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                Mobile [Cordova, Ionic], % <span>85</span>
-              </div>
-            </div>
+        </div>
+        <div class="progress tpl-progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            Mobile [Cordova, Ionic], % <span>85</span>
+          </div>
+        </div>
+        <div class="progress tpl-progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            Desktop [C/C++, Delphi/Pascal, Java], % <span>90</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section banner" id="perfil">
-      <div class="banner-bg parallax">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5 txt-banner" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
-              <div class="titles">
-                <h2><strong>maykel</strong> rodrigues</h2>
-                <p>
-                  Nas horas vagas, "<span>garoto de programa</span>".
-                </p>
-                <p>
-                  Capixaba, adventista, programador e
-                  viciado em internet - assim, nessa
-                  ordem. Estuda Sistemas de Informação
-                  e joga xadrez.
-                </p>
-              </div>
+  <section class="education" id="education">
+    <div class="container">
+      <div class="col-md-12">
+        <h2 class="titles">
+          education <strong>rodrigues</strong></h2>
+          <i class="line"></i>
+        </h2>
+      </div>
+
+      <div class="col-md-12 texts">
+        <h3>Tecnólogo em Redes de Computadores</h3>
+        <h5>Instituto Federal do Espírito Santo</h5>
+        <p>O curso procura formar profissionais habilitados a atuar no planejamento,
+          análise, elaboração, implantação, gerenciamento e manutenção de projetos
+          lógicos e físicos de redes de computadores. Conhecimentos de instalações
+          elétricas, teste físico e lógico de redes, normas de instalações e utilização
+          de instrumentos de medição e segurança são requisitos à atuação desse profissional.
+        </p>
+        <h6>Graduado: 2014</h6>
+      </div>
+
+      <div class="col-md-12 texts">
+        <h3>Bacharel em Sistemas de Informação</h3>
+        <h5>Instituto Federal do Espírito Santo</h5>
+        <p>O curso de Sistemas de Informação forma profissionais na área de Computação e
+          Informática para atuação em pesquisa, gestão, desenvolvimento, uso e avaliação
+          de tecnologias de informação aplicadas nas organizações. A formação também capacita
+          o profissional a de desenvolver, implementar e gerenciar uma infraestrutura de
+          tecnologia da informação (computadores e comunicação), dados (internos e externos)
+          e sistemas que abrangem toda a organização.
+        </p>
+        <h6>Graduando: 2018</h6>
+      </div>
+    </div>
+  </section>
+
+  <section class="section perfil" id="perfil">
+    <div class="perfil-bg parallax">
+      <div class="container pattern">
+        <div class="col-md-5 txt-perfil">
+          <p>
+            Nas horas vagas, "<span>garoto de programa</span>".
+          </p>
+          <p>
+            Capixaba, adventista, programador e
+            viciado em internet - assim, nessa
+            ordem. Estuda Sistemas de Informação
+            e joga xadrez.
+          </p>
+        </div>
+        <div class="col-md-6 col-md-offset-1 img-perfil">
+          <img src="img/banner.png" alt="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section works" id="jobs">
+    <div class="container">
+      <div class="col-md-7">
+        <div class="carousel slide" id="slider-home" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/promo-1-min.png" alt="slide">
             </div>
-            <div class="col-md-6 col-md-offset-1 img-banner"
-              data-uk-scrollspy="{cls:'uk-animation-fade', delay:1000, repeat: true}">
-              <img src="img/banner.png">
+            <div class="item">
+              <img src="img/promo-2-min.png" alt="slide">
             </div>
+            <div class="item">
+              <img src="img/promo-3-min.png" alt="slide">
+            </div>
+            <div class="item">
+              <img src="img/promo-4-min.png" alt="slide">
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#slider-home" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#slider-home" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          <ol class="carousel-indicators">
+            <li data-target="#slider-home" data-slide-to="0" class="active"></li>
+            <li data-target="#slider-home" data-slide-to="1"></li>
+            <li data-target="#slider-home" data-slide-to="2"></li>
+            <li data-target="#slider-home" data-slide-to="3"></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="col-md-5" id="text">
+        <h2 class="titles">
+          works <strong>rodrigues</strong></h2>
+        </h2>
+        <p>
+          "A única forma de fazer um trabalho genial é amar
+          o que se você faz. Se você ainda não o encontrou,
+          continue procurando, nunca se detenha. Igualmente
+          como todos os assuntos do coração, você saberá
+          quando o encontrares." <strong> Steve Jobs</strong>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="banner parallax">
+    <div class="container pattern">
+      <h3>AGENDE UMA VISITA E EXPLORE MINHA CRIATIVIDADE!</h3>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+  <div class="container">
+    <div class="col-md-12">
+      <h2 class="titles">
+        contact <strong>rodrigues</strong></h2>
+        <i class="line"></i>
+      </h2>
+    </div>
+
+    <div class="col-md-10 col-md-offset-1 info">
+      <div class="col-md-4">
+        <div class="contact-item">
+          <div class="icons">
+            <span class="glyphicon glyphicon-earphone"></span>
+          </div>
+          <div class="title">
+            Telefone
+          </div>
+          <div class="text">
+            +55 27 9-9832-7023
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="section works" id="jobs">
-      <div class="container">
-        <div class="col-md-7">
-          <div class="carousel slide" data-ride="carousel" id="slider-home" data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true}">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="img/promo-1-min.png">
-              </div>
-              <div class="item">
-                <img src="img/promo-2-min.png">
-              </div>
-              <div class="item">
-                <img src="img/promo-3-min.png">
-              </div>
-              <div class="item">
-                <img src="img/promo-4-min.png">
-              </div>
-            </div>
-
-            <a class="left carousel-control" href="#slider-home" data-slide="prev">
-              <div class="control-rotate">
-                <span class="glyphicon glyphicon-chevron-left"></span></a>
-              </div>
-              <a class="right carousel-control" href="#slider-home" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-              <ol class="carousel-indicators">
-                <li data-target="#slider-home" data-slide-to="0" class="active"></li>
-                <li data-target="#slider-home" data-slide-to="1"></li>
-                <li data-target="#slider-home" data-slide-to="2"></li>
-                <li data-target="#slider-home" data-slide-to="3"></li>
-              </ol>
-            </div>
+      <div class="col-md-4">
+        <div class="contact-item">
+          <div class="icons">
+            <span class="glyphicon glyphicon-map-marker"></span>
           </div>
-          <div class="col-md-5 text" data-uk-scrollspy="{cls:'uk-animation-scale-up', delay:600, repeat: true}">
-            <div class="titles">
-              <h2>jobs <strong>rodrigues</strong></h2>
-              <p>
-                "A única forma de fazer um trabalho genial é amar
-                o que se você faz. Se você ainda não o encontrou,
-                continue procurando, nunca se detenha. Igualmente
-                como todos os assuntos do coração, você saberá
-                quando o encontrares." <strong> Steve Jobs</strong>
-              </p>
-            </div>
+          <div class="title">
+            Endereço
+          </div>
+          <div class="text">
+            Joao Tinelli, 470 - Colatina
           </div>
         </div>
-      </section>
-
-      <section class="section timeline" id="timeline">
-        <div class="timeline-bg parallax">
-          <div class="container">
-            <div class="row titles">
-              <div class="col-md-12">
-                <h2 data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:800, repeat: true}">
-                  timeline <strong>rodrigues</strong></h2>
-                  <i class="title_line"></i>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="education">
-                    <div class="item"
-                    data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
-                    <div class="marker"></div>
-                    <div class="content">
-                      <span>Instituto Federal</span>
-                      <h4>Redes de Computadores</h4>
-                    </div>
-                    <div class="year">2008 - 2014</div>
-                  </div> <!-- end item -->
-                  <div class="item"
-                  data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1000, repeat: true}">
-                  <div class="marker"></div>
-                  <div class="content">
-                    <span>Iniciação Científica</span>
-                    <h4>Heurística de Cobertura</h4>
-                  </div>
-                  <div class="year">2011 - 2012</div>
-                </div> <!-- end item -->
-                <div class="item"
-                data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1500, repeat: true}">
-                <div class="marker"></div>
-                <div class="content">
-                  <span>Instituto Federal</span>
-                  <h4>Sistemas de Informação</h4>
-                </div>
-                <div class="year">2015 - 2018</div>
-              </div> <!-- end item -->
-              <div class="item"
-              data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:2000, repeat: true}">
-              <div class="marker"></div>
-              <div class="content">
-                <span>Iniciação Científica</span>
-                <h4>SADIC</h4>
-              </div>
-              <div class="year">2015 - 2016</div>
-            </div> <!-- end item -->
-            <div class="line"></div>
-          </div> <!-- end .education -->
+      </div>
+      <div class="col-md-4">
+        <div class="contact-item">
+          <div class="icons">
+            <span class="glyphicon glyphicon-envelope"></span>
+          </div>
+          <div class="title">
+            Email
+          </div>
+          <div class="text">
+            maykelrodrigues@live.com
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="maps">
+    <div id="mapa"></div>
+  </div>
 </section>
-
-
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="row titles">
-      <div class="col-md-12">
-        <h2 data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:800, repeat: true}">
-          contact <strong>rodrigues</strong></h2>
-          <i class="title_line"></i>
-        </div>
-      </div>
-      <div class="row info">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
-            <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
-              <div class="contact-item">
-                <div class="icons">
-                  <span class="glyphicon glyphicon-earphone"></span>
-                </div>
-                <div class="title">
-                  Telefone
-                </div>
-                <div class="text">
-                  +55 27 9-9832-7023
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
-              <div class="contact-item">
-                <div class="icons">
-                  <span class="glyphicon glyphicon-map-marker"></span>
-                </div>
-                <div class="title">
-                  Endereço
-                </div>
-                <div class="text">
-                  Joao Tinelli, 470 - Colatina
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
-              <div class="contact-item">
-                <div class="icons">
-                  <span class="glyphicon glyphicon-envelope"></span>
-                </div>
-                <div class="title">
-                  Email
-                </div>
-                <div class="text">
-                  maykelrodrigues@live.com
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="maps">
-      <div id="mapa"></div>
-    </div>
-
-  </section>
 
   <footer class="text-center">
     <h5>Socialize</h5>
@@ -351,12 +316,13 @@
     </ul>
     <p>MAYKEL RODRIGUES TEMPLATE 2016</p>
   </footer>
+
+
+
 </body>
 
-<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/maps.js"></script>
-<script src="js/uikit.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 <script src="js/custom.js"></script>
-
 </html>

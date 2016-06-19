@@ -1,99 +1,68 @@
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
 
-ga('create', 'UA-42965057-4', 'auto');
-ga('send', 'pageview');
+// Scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
 var progressBar = $(".progress-bar");
 progressBar.each(function(indx){
   $(this).css("width", $(this).attr("aria-valuenow") + "%");
 });
 
-var lastId,
-topMenu = $("nav, #button-down"),
-topMenuHeight = topMenu.outerHeight()+50,
-menuItems = topMenu.find("a"),
-scrollItems = menuItems.map(function(){
-  var item = $($(this).attr("href"));
-  if (item.length) { return item; }
-});
 
+function initialize() {
 
-menuItems.click(function(e){
-  var href = $(this).attr("href"),
-  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+100;
-  $('html, body').stop().animate({
-    scrollTop: offsetTop
-  }, 1500);
-  e.preventDefault();
-});
-
-$(window).scroll(function(){
-  var fromTop = $(this).scrollTop()+topMenuHeight;
-
-  var cur = scrollItems.map(function(){
-    if ($(this).offset().top < fromTop)
-    return this;
-  });
-  cur = cur[cur.length-1];
-  var id = cur && cur.length ? cur[0].id : "";
-
-  if (lastId !== id) {
-    lastId = id;
-    menuItems
-    .parent().removeClass("active")
-    .end().filter("[href=#"+id+"]").parent().addClass("active");
+  // Exibir mapa;
+  var myLatlng = new google.maps.LatLng(-19.526528, -40.666217);
+  var mapOptions = {
+    zoom: 16,
+    center: myLatlng,
+    panControl: false,
+	scrollwheel: false,
+    // mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
   }
-});
 
 
-$(document).ready(function(){
-var myNavBar = {
+  var map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+  var image = 'img/map-marker.png';
+  var marcadorPersonalizado = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: image,
+      title: 'Marco Zero - Recife/PE',
+      animation: google.maps.Animation.DROP
+  });
 
-    flagAdd: true,
-    elements: [],
-    init: function (elements) {
-        this.elements = elements;
-    },
-    add : function() {
-        if(this.flagAdd) {
-            for(var i=0; i < this.elements.length; i++) {
-                document.getElementById(this.elements[i]).className += " fixed-theme";
-            }
-            this.flagAdd = false;
-        }
-    },
-    remove: function() {
-        for(var i=0; i < this.elements.length; i++) {
-            document.getElementById(this.elements[i]).className =
-                    document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
-        }
-        this.flagAdd = true;
-    }
-};
+  var theme_array = [{"featureType":"all","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]}];
 
-myNavBar.init(  [
-    "header",
-    "header-container",
-    "brand"
-]);
-function offSetManager(){
-
-    var yOffset = 0;
-    var currYOffSet = window.pageYOffset;
-
-    if(yOffset < currYOffSet) {
-        myNavBar.add();
-    }
-    else if(currYOffSet == yOffset){
-        myNavBar.remove();
-    }
-
+  var styledMap = new google.maps.StyledMapType(theme_array, {
+    name: "Mapa Style"
+  });
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
 }
-window.onscroll = function(e) {
-    offSetManager();
+function loadScript() {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyCuIDF_3dhUNdgre_Np_8_FJljK80WSLe4&callback=initialize";
+  document.body.appendChild(script);
 }
-offSetManager();
-});
+
+window.onload = loadScript;
