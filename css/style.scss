@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     color: white;
     h2 {
       text-transform: uppercase;
-      font-size: 1.8em;
+      font-size: 3.2em;
     }
     p {
       font-size: 1.2em;
@@ -150,6 +150,9 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     #text {
       padding: 0 20px;
       top: 30vh;
+      h2 {
+        font-size: 1.6em;
+      }
     }
   }
 }
@@ -360,9 +363,9 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   background-image: url('../img/bg-cover-3.jpg');
   background-size: cover;
   h3 {
-    padding-top: 80px;
+    padding-top: 100px;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.6em;
     color: #DDD;
   }
 }

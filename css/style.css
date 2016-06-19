@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     color: white; }
     .home #text h2 {
       text-transform: uppercase;
-      font-size: 1.8em; }
+      font-size: 3.2em; }
     .home #text p {
       font-size: 1.2em;
       font-weight: 100; }
@@ -115,7 +115,9 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 @media all and (max-width: 768px) {
   .home #text {
     padding: 0 20px;
-    top: 30vh; } }
+    top: 30vh; }
+    .home #text h2 {
+      font-size: 1.6em; } }
 .about {
   margin-bottom: 50px; }
   .about #signature {
@@ -269,9 +271,9 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   background-image: url("../img/bg-cover-3.jpg");
   background-size: cover; }
   .banner h3 {
-    padding-top: 80px;
+    padding-top: 100px;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.6em;
     color: #DDD; }
 
 @media all and (max-width: 768px) {
