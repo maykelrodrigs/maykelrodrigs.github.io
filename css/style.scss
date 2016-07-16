@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   position: absolute;
 }
 
+.line-education {
+  margin-top: 8vh;
+}
+
 .texts {
   margin-top: 10vh;
   text-align: justify;
@@ -212,22 +216,28 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .education {
   margin-bottom: 80px;
   .texts {
-    text-align: center;
     margin-top: 7vh;
-    h3 {
-      font-size: 1.4em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+    .year {
+      border-right: 1.5px solid black;
+      margin-top: 1vh;
+      text-align: center;
+      h4 {
+      }
+      h3 {
+        font-size: 4.4em;
+        color: $primary;
+      }
     }
-    h5 {
-      font-size: 1em;
-      font-weight: 100;
-      letter-spacing: 2.4px;
+    .descr {
+      h4 {
+        font-size: 1.4em;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: .8em;
+      }
     }
-    h6 {
-      font-size: 1em;
-      font-weight: bold;
-    }
+
   }
 }
 
