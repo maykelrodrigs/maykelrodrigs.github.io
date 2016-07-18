@@ -41,17 +41,9 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<div id="preloader">
-  <div id="status">
-    <div style="color: #fcb92d" class="la-ball-running-dots la-3x">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
   </div>
-</div>
 
 
   <!-- Navigation -->
@@ -358,8 +350,8 @@
 $(document).ready(function(){
 
 	$(window).load(function() {
-		$('#status').fadeOut();
-		$('#preloader').delay(350).fadeOut('slow');
+		$('#loader').fadeOut();
+		$('#loader-wrapper').delay(350).fadeOut('slow');
 		$('body').delay(350).css({'overflow':'visible'});
 	})
 
