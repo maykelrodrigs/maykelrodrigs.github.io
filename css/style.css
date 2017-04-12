@@ -26,10 +26,10 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   font-size: 2em;
   text-align: right; }
   .titles strong {
-    color: #fcb92d; }
+    color: #45ADA8; }
   .titles:after {
     content: ".";
-    color: #fcb92d;
+    color: #45ADA8;
     font-size: 50px;
     padding-left: 5px; }
 
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   color: white !important;
   font-family: 'Ubuntu', sans-serif; }
   .navbar-brand span {
-    color: #fcb92d;
+    color: #45ADA8;
     font-weight: 800; }
   .navbar-brand:hover {
     color: white; }
@@ -75,14 +75,14 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .navbar .nav > li a:hover, .navbar .nav > li a:focus {
   background: none;
   box-shadow: none;
-  color: #fcb92d; }
+  color: #45ADA8; }
 
 .navbar .nav > .active a,
 .navbar .nav > .active a:hover,
 .navbar .nav > .active a:focus {
   background: none;
   box-shadow: none;
-  color: #fcb92d; }
+  color: #45ADA8; }
 
 @media (min-width: 767px) {
   .navbar {
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   .navbar-toggle {
     border: 1px solid white; }
     .navbar-toggle .icon-bar {
-      background: #fcb92d; } }
+      background: #45ADA8; } }
 .home {
   position: relative;
   background-image: url("../img/bg-cover-1.jpg");
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
       text-align: center; }
       .education .texts .year h3 {
         font-size: 4.4em;
-        color: #fcb92d; }
+        color: #45ADA8; }
     .education .texts .descr h4 {
       font-size: 1.4em;
       text-transform: uppercase; }
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
         color: white;
         font-weight: 200; }
         .perfil .perfil-bg .txt-perfil p span {
-          color: #fcb92d;
+          color: #45ADA8;
           font-weight: bold; }
     .perfil .perfil-bg .img-perfil {
       margin-top: -30px; }
@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right {
-  color: #fcb92d;
+  color: #45ADA8;
   transform: rotate(-45deg); }
 
 .carousel-control .glyphicon-chevron-left {
@@ -250,8 +250,8 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   background-color: #DDD; }
 
 .carousel-indicators .active {
-  background-color: #fcb92d !important;
-  border: 1px solid #fcb92d; }
+  background-color: #45ADA8 !important;
+  border: 1px solid #45ADA8; }
 
 @media all and (max-width: 768px) {
   .carousel-control {
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
       .contact .info .col-md-4 .contact-item .icons .glyphicon {
         padding-top: 5px;
         font-size: 18px;
-        color: #fcb92d; }
+        color: #45ADA8; }
     .contact .info .col-md-4 .contact-item .title {
       padding-top: 0px;
       padding-left: 40px;
@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 
 #mapa {
   height: 400px;
-  border-top: 4px solid #fcb92d;
+  border-top: 4px solid #45ADA8;
   border-bottom: 6px solid white; }
 
 @media all and (max-width: 768px) {
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     .contact .info .col-md-4 .contact-item {
       padding-bottom: 40px; } }
 footer {
-  background: #fcb92d;
+  background: #45ADA8;
   border-top: 2px solid white;
   color: white;
   padding-bottom: 5px; }
