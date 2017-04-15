@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .pattern {
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(0,0,0,.9)0%, rgba(0,0,0,1) 100%),
-      url("../img/pattern-01.png") repeat;
+  background: linear-gradient(0deg, rgba(0,0,0,.8)0%, rgba(0,0,0,.9) 100%),
+      repeat;
   opacity: 1;
 }
 
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 //******************************************************************************
 // NAVBAR
 .navbar-brand {
-    font-size: 1em;
+    font-size: 1.2em;
     color: white !important;
     font-family: 'Ubuntu', sans-serif;
     span{
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 }
 .navbar .nav > li a {
     text-shadow: none;
-    font-size: .8em;
+    font-size: .9em;
     color: white;
     text-transform: uppercase; }
     .navbar .nav > li a:hover, .navbar .nav > li a:focus {
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 // HOME / SLIDER
 .home {
   position: relative;
-  background-image: url('../img/bg-cover-1.jpg');
+  background-image: url('../img/bg-cover-2.jpg');
   background-size: cover;
   #text {
     position: absolute;
@@ -140,11 +140,12 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     color: white;
     h2 {
       text-transform: uppercase;
-      font-size: 3.2em;
+      font-size: 3.6em;
     }
     p {
-      font-size: 1.2em;
-      font-weight: 100;
+      font-size: 1.4em;
+      font-weight: 400;
+      color: $primary;
     }
   }
 }
@@ -216,7 +217,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .education {
   margin-bottom: 80px;
   .texts {
-    margin-top: 7vh;
+    margin-top: 6vh;
     .year {
       border-right: 1.5px solid black;
       margin-top: 1vh;
@@ -234,7 +235,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
         text-transform: uppercase;
       }
       p {
-        font-size: .8em;
+        font-size: .9em;
       }
     }
 
@@ -246,16 +247,17 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .perfil {
   padding-top: 15vh;
   .perfil-bg {
-    background-image: url('../img/bg-cover-2.jpg');
+    background: linear-gradient(0deg, rgba(0,0,0,.4)0%, rgba(0,0,0,.8) 100%),
+      url('../img/bg-cover-1.jpg');
     background-size: cover;
     height: 70vh;
     .txt-perfil {
       padding-top: 170px;
         p {
-          font-size: 22px;
+          font-size: 26px;
           font-family: 'Yanone Kaffeesatz', sans-serif;
           color: white;
-          font-weight: 200;
+          font-weight: 300;
           span {
             color: $primary;
             font-weight: bold;
@@ -297,7 +299,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     }
     p {
       text-align: right;
-      font-weight: 200;
+      font-weight: 300;
     }
   }
 }
