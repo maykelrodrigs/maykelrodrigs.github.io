@@ -10,6 +10,7 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/uikit.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -84,58 +85,68 @@
 
   <section class="about" id="about">
     <div class="container">
-      <div class="col-md-12">
-        <h2 class="titles">
-          about <strong>rodrigues</strong></h2>
-          <i class="line"></i>
-        </h2>
-      </div>
-
-      <div class="col-md-4 texts">
-        <p>Oi, meu nome é Maykel Rodrigues, nasci em Colatina/ES e trabalho com desenvolvimento
-          de aplicações desktop, web e mobile. Sou formado em Redes de Computadores (2014) pelo
-          Instituto Federal do Espírito Santo/IFES e atualmente cursando Sistemas de Informação
-          (2018) na mesma instituição.
-        </p>
-      </div>
-
-      <div class="col-md-4 texts">
-        <p>
-          "Conhecimento que tenha qualquer valor não pode ser dado. Deve ser procurado e conquistado."
-        </p>
-        <strong>- Tot, deus da Sabedoria, em 'A Sombra da Serpente'.</strong>
-        <div id="signature">
-          <img src="img/signature.png" alt="assinatura" />
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="titles">
+            about <strong>rodrigues</strong></h2>
+            <i class="line"></i>
+          </h2>
         </div>
       </div>
 
-      <div class="col-md-4 texts">
-        <div class="progress tpl-progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-            HTML, % <span>95</span>
+      <div class="row" uk-scrollspy="cls: uk-animation-fade; target: > .col-md-4; delay: 500; repeat: true">
+        <div class="col-md-4 texts">
+          <p>Oi, meu nome é Maykel Rodrigues, tenho 27 anos, nasci em Colatina/ES e trabalho com desenvolvimento
+            de aplicações desktop, web e mobile. Sou formado em Redes de Computadores (2014) pelo
+            Instituto Federal do Espírito Santo/IFES e atualmente cursando Sistemas de Informação
+            (2018) na mesma instituição.
+          </p>
+        </div>
+
+        <div class="col-md-4 texts">
+          <div class="progress tpl-progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              HTML, CSS  <span>95%</span>
+            </div>
+          </div>
+          <div class="progress tpl-progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              JavaScript  <span>85%</span>
+            </div>
+          </div>
+          <div class="progress tpl-progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              Ionic e Cordova <span>75%</span>
+            </div>
+          </div>
+          <div class="progress tpl-progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              Java<span>90%</span>
+            </div>
+          </div>
+          <div class="progress tpl-progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              C e C++<span>90%</span>
+            </div>
+          </div>
+          <div class="progress tpl-progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              Delphi<span>70%</span>
+            </div>
           </div>
         </div>
-        <div class="progress tpl-progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            CSS [Sass, Bootstrap, Foundation], % <span>90</span>
-          </div>
-        </div>
-        <div class="progress tpl-progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            JavaScript [jQuery, AngularJS], % <span>75</span>
-          </div>
-        </div>
-        <div class="progress tpl-progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            Mobile [Cordova, Ionic], % <span>85</span>
-          </div>
-        </div>
-        <div class="progress tpl-progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-            Desktop [C/C++, Delphi/Pascal, Java], % <span>90</span>
+
+        <div class="col-md-4 texts">
+          <p>
+            "Conhecimento que tenha qualquer valor não pode ser dado. Deve ser procurado e conquistado."
+          </p>
+          <strong>- Tot, deus da Sabedoria, em 'A Sombra da Serpente'.</strong>
+          <div id="signature">
+            <img src="img/signature.png" alt="assinatura" />
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -148,14 +159,37 @@
         </h2>
       </div>
 
-      <div class="col-md-12 texts">
+      <div class="col-md-12 texts-right" uk-scrollspy="cls: uk-animation-slide-left;  delay: 1000">
+        <div class="col-md-8 descr">
+          <h4>Bacharel em Sistemas de Informação</h4>
+          <h5>Instituto Federal do Espírito Santo { IFES }</h5>
+          <p>
+            O curso de Sistemas de Informação forma profissionais na área de Computação e
+            Informática para atuação em pesquisa, gestão, desenvolvimento, uso e avaliação de
+            tecnologias de informação aplicadas nas organizações. A formação também capacita
+            o profissional a de desenvolver, implementar e gerenciar uma infraestrutura de
+            tecnologia da informação (computadores e comunicação), dados (internos e externos)
+            e sistemas que abrangem toda a organização.
+          </p>
+        </div>
+        <div class="col-md-3 col-md-offset-1 year">
+          <h4>Graduando</h4>
+          <h3>2018</h3>
+        </div>
+      </div>
+
+      <div class="col-md-12 line-education">
+        <i class="line"></i>
+      </div>
+
+      <div class="col-md-12 texts" uk-scrollspy="cls: uk-animation-slide-right; delay: 1000">
         <div class="col-md-3 year">
           <h4>Graduado</h4>
             <h3>2014</h3>
         </div>
         <div class="col-md-8 col-md-offset-1 descr">
           <h4>Tecnólogo em Redes de Computadores</h4>
-          <h5>Instituto Federal do Espírito Santo</h5>
+          <h5>Instituto Federal do Espírito Santo { IFES }</h5>
           <p>
             O curso procura formar profissionais habilitados a atuar no planejamento, análise,
             elaboração, implantação, gerenciamento e manutenção de projetos lógicos e físicos de
@@ -170,31 +204,12 @@
         <i class="line"></i>
       </div>
 
-      <div class="col-md-12 texts">
-        <div class="col-md-3 year">
-          <h4>Graduando</h4>
-          <h3>2018</h3>
-        </div>
-        <div class="col-md-8 col-md-offset-1 descr">
-          <h4>Bacharel em Sistemas de Informação</h4>
-          <h5>Instituto Federal do Espírito Santo</h5>
-          <p>
-            O curso de Sistemas de Informação forma profissionais na área de Computação e
-            Informática para atuação em pesquisa, gestão, desenvolvimento, uso e avaliação de
-            tecnologias de informação aplicadas nas organizações. A formação também capacita
-            o profissional a de desenvolver, implementar e gerenciar uma infraestrutura de
-            tecnologia da informação (computadores e comunicação), dados (internos e externos)
-            e sistemas que abrangem toda a organização.
-          </p>
-        </div>
-      </div>
-
   </section>
 
   <section class="section perfil" id="perfil">
     <div class="perfil-bg parallax">
       <div class="container pattern">
-        <div class="col-md-5 txt-perfil">
+        <div class="col-md-5 txt-perfil" uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
           <p>
             Nas horas vagas, "<span>garoto de programa</span>".
           </p>
@@ -204,7 +219,7 @@
             ordem. Apaixonado por futebol, xadrez e poker.
           </p>
         </div>
-        <div class="col-md-6 col-md-offset-1 img-perfil">
+        <div class="col-md-6 col-md-offset-1 img-perfil" uk-scrollspy="cls: uk-animation-fade;  delay: 1000">
           <img src="img/banner.png" alt="banner">
         </div>
       </div>
@@ -244,7 +259,7 @@
         </div>
       </div>
 
-      <div class="col-md-5" id="text">
+      <div class="col-md-5" id="text" uk-scrollspy="cls: uk-animation-fade;  delay: 500">
         <h2 class="titles">
           works <strong>rodrigues</strong></h2>
         </h2>
@@ -275,7 +290,7 @@
       </h2>
     </div>
 
-    <div class="col-md-10 col-md-offset-1 info">
+    <div class="col-md-10 col-md-offset-1 info" uk-scrollspy="cls: uk-animation-fade; target: > .col-md-4; delay: 500">
       <div class="col-md-4">
         <div class="contact-item">
           <div class="icons">
@@ -336,7 +351,7 @@
         <a href="https://www.linkedin.com/in/maykel-rodrigues-a508444b" target="_blank"></a>
       </li>
     </ul>
-    <p>MAYKEL RODRIGUES TEMPLATE 2016</p>
+    <p>COPYRIGHT MAYKEL RODRIGUES TEMPLATE</p>
   </footer>
 
 
@@ -346,6 +361,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
+<script src="js/uikit.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
 $(document).ready(function(){

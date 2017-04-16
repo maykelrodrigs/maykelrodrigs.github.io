@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 
 .titles {
   position: relative;
-  margin-top: 15vh;
+  margin-top: 13vh;
   font-size: 2em;
   text-align: right; }
   .titles strong {
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   position: absolute; }
 
 .line-education {
-  margin-top: 8vh; }
+  margin-top: 4vh; }
 
 .texts {
   margin-top: 10vh;
@@ -129,9 +129,10 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     width: 100%;
     text-align: right; }
     .about #signature img {
-      width: 40%; }
+      width: 45%; }
   .about .texts {
-    margin-top: 25vh; }
+    margin-top: 20vh;
+    line-height: 200%; }
 
 .tpl-progress {
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .education {
   margin-bottom: 80px; }
   .education .texts {
-    margin-top: 6vh; }
+    margin-top: 7vh; }
     .education .texts .year {
       border-right: 1.5px solid black;
       margin-top: 1vh;
@@ -170,11 +171,36 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
       .education .texts .year h3 {
         font-size: 4.4em;
         color: #45ADA8; }
-    .education .texts .descr h4 {
-      font-size: 1.4em;
-      text-transform: uppercase; }
-    .education .texts .descr p {
-      font-size: .9em; }
+    .education .texts .descr {
+      text-align: right; }
+      .education .texts .descr h4 {
+        font-size: 1.4em;
+        text-transform: uppercase; }
+      .education .texts .descr h5 {
+        font-size: 1.0em; }
+      .education .texts .descr p {
+        font-size: .8em;
+        font-weight: 300; }
+  .education .texts-right {
+    margin-top: 6vh; }
+    .education .texts-right .year {
+      border-left: 1.5px solid black;
+      margin-top: 1vh;
+      text-align: center; }
+      .education .texts-right .year h3 {
+        font-size: 4.4em;
+        color: #45ADA8; }
+    .education .texts-right .descr {
+      text-align: left; }
+      .education .texts-right .descr h4 {
+        font-size: 1.4em;
+        text-transform: uppercase; }
+      .education .texts-right .descr h5 {
+        font-size: 1.0em; }
+      .education .texts-right .descr p {
+        text-align: justify;
+        font-size: .8em;
+        font-weight: 300; }
 
 .perfil {
   padding-top: 15vh; }
@@ -208,7 +234,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
       .perfil .perfil-bg .img-perfil {
         margin-top: 20px; } }
 .works {
-  padding-top: 25vh; }
+  padding-top: 30vh; }
   .works #text .titles {
     margin-top: 10vh; }
   .works #text p {
@@ -368,8 +394,9 @@ footer {
   footer p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 800;
-    font-size: 14px;
-    font-weight: 100;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
     text-transform: uppercase; }
 
 @-webkit-keyframes iconFloat {

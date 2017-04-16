@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 
 .titles {
   position: relative;
-  margin-top: 15vh;
+  margin-top: 13vh;
   font-size: 2em;
   text-align: right;
     strong {
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 }
 
 .line-education {
-  margin-top: 8vh;
+  margin-top: 4vh;
 }
 
 .texts {
@@ -166,16 +166,18 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 // ABOUT / SERVICES
 .about {
   margin-bottom: 50px;
+
   #signature {
     padding-top: 30px;
     width: 100%;
     text-align: right;
     img {
-      width: 40%;
+      width: 45%;
     }
   }
   .texts {
-    margin-top: 25vh;
+    margin-top: 20vh;
+    line-height: 200%;
   }
 }
 .tpl-progress {
@@ -217,7 +219,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 .education {
   margin-bottom: 80px;
   .texts {
-    margin-top: 6vh;
+    margin-top: 7vh;
     .year {
       border-right: 1.5px solid black;
       margin-top: 1vh;
@@ -230,15 +232,48 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
       }
     }
     .descr {
+      text-align: right;
       h4 {
         font-size: 1.4em;
         text-transform: uppercase;
       }
+      h5 {
+        font-size: 1.0em;
+      }
       p {
-        font-size: .9em;
+        font-size: .8em;
+        font-weight: 300;
       }
     }
-
+  }
+  .texts-right {
+    margin-top: 6vh;
+    .year {
+      border-left: 1.5px solid black;
+      margin-top: 1vh;
+      text-align: center;
+      h4 {
+      }
+      h3 {
+        font-size: 4.4em;
+        color: $primary;
+      }
+    }
+    .descr {
+      text-align: left;
+      h4 {
+        font-size: 1.4em;
+        text-transform: uppercase;
+      }
+      h5 {
+        font-size: 1.0em;
+      }
+      p {
+        text-align:justify;
+        font-size: .8em;
+        font-weight: 300;
+      }
+    }
   }
 }
 
@@ -292,7 +327,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 //******************************************************************************
 // WORKS
 .works {
-  padding-top: 25vh;
+  padding-top: 30vh;
   #text {
     .titles {
       margin-top: 10vh;
@@ -501,8 +536,9 @@ footer {
   p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 800;
-    font-size: 14px;
-    font-weight: 100;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
     text-transform: uppercase;
   }
 
