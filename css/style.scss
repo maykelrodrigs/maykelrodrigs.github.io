@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
   width: 100%;
   height: 2px;
   position: absolute;
+  left: 0;
 }
 
 .line-education {
@@ -118,6 +119,9 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
     }
 }
 @media all and (max-width: 768px) {
+  .navbar .nav {
+    background: black;
+  }
   .navbar-toggle{
     border: 1px solid white;
     .icon-bar {
