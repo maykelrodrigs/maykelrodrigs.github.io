@@ -61,7 +61,7 @@ function initialize() {
 function loadScript() {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyCuIDF_3dhUNdgre_Np_8_FJljK80WSLe4&callback=initialize";
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCuIDF_3dhUNdgre_Np_8_FJljK80WSLe4&callback=initialize";
   document.body.appendChild(script);
 }
 
