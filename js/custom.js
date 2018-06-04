@@ -61,7 +61,7 @@ function initialize() {
 function loadScript() {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBL-m2c1yZM4-rRdXJAQ5xAxBu4gRY_TAQ&callback=initialize";
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCavfrKJ5f7C5OvXbsWOQu6M1IaFzXZ2E4&callback=initialize";
   document.body.appendChild(script);
 }
 
